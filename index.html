@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashraj Deshmukh - Portfolio</title>
+    <!-- Add tab icon -->
+    <link rel="icon" href="https://media.discordapp.net/attachments/1074720627921002526/1222872012968558602/ypng.png?ex=6617cb4f&is=6605564f&hm=34cc6c8b8f556ab3d0c50b1807b31929956c1c199a5ed7e09e02f97c6b22c425&=&format=webp&quality=lossless&width=613&height=613" type="image/png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.gifer.com/9LIY.gif');
+            background-size: cover;
+            color: white; /* Text color */
+        }
+
+        .container {
+            max-width: 90%;
+            width: 80%; /* Adjusted to fit the screen better */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark translucent background */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        }
+
+        .card {
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark translucent background for card */
+        }
+
+        .social-icons, .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a, .contact a {
+            margin: 5px 0;
+            color: #007bff; /* iOS blue */
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounded corners */
+            background-color: rgba(255, 255, 255, 0.3); /* White translucent background */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+        }
+
+        .social-icons a:hover, .contact a:hover {
+            background-color: rgba(255, 255, 255, 0.5); /* Lighter white translucent background on hover */
+            color: #fff; /* White text on hover */
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list li {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Background styling for the last three cards */
+        .lower-container {
+            margin-top: 20px;
+        }
+
+        .lower-container .card {
+            background-color: rgba(0, 0, 0, 0.8); /* Dark translucent background for card */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .lower-container .card:not(:last-child) {
+            border-bottom: 2px solid #ccc; /* Light gray line between cards */
+            padding-bottom: 20px;
+        }
+
+        /* Enlarge text and center it */
+        .center-text {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Copyright notice */
+        .copyright {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        /* Animation for playing forward and then reversing */
+        @keyframes playForwardAndReverse {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        /* Apply animation to the background */
+        body {
+            animation: playForwardAndReverse 6s linear infinite;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            .social-icons, .contact {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="center-text">Yashraj Deshmukh</h1>
+            <div class="social-icons">
+                <a href="https://instagram.com/thevin.d" target="_blank">Instagram</a>
+                <a href="https://discord.com/users/993033538838482986" target="_blank">Discord</a>
+                <a href="https://www.youtube.com/@thevindx2" target="_blank">YouTube</a>
+                <a href="https://open.spotify.com/artist/6N2l5QQZ7WOaQcMnoQCQJ2?si=polY4gtsTYaAlaIukjF35g" target="_blank">Spotify</a>
+                <a href="mailto:deshmukhyashraj324@gmail.com" class="contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- Container for the combined lower three cards -->
+        <div class="lower-container">
+            <div class="card">
+                <h2>Skills</h2>
+                <ul class="skill-list">
+                    <li>Artist</li>
+                    <li>Graphic Designer</li>
+                    <li>Social Media Manager</li>
+                    <li>Discord Server Designer</li>
+                    <li>Bot Developer</li>
+                    <li>Partner Manager</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Graphic Designing</h2>
+                <ul class="skill-list">
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Photopea</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Programming</h2>
+                <ul class="skill-list">
+                    <li>Python Frontend</li>
+                    <li>JavaScript</li>
+                    <li>Lua (learning)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright notice -->
+        <div class="copyright">
+            &copy; All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>
